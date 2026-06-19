@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/ShivamSoni1995/Homelab
     targetRevision: gitops
-    path: gitops-safe/overlays/dev
+    path: gitops-safe1/overlays/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: humor-game
