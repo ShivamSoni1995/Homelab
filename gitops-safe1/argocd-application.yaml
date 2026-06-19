@@ -8,7 +8,7 @@ spec:
   project: humor-game-safe
   source:
     repoURL: https://github.com/ShivamSoni1995/Homelab
-    targetRevision: gitops
+    targetRevision: main
     path: gitops-safe1/overlays/dev
   destination:
     server: https://kubernetes.default.svc
