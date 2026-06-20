@@ -17,10 +17,12 @@ spec:
         prometheus.io/port: "3001"
         prometheus.io/path: "/metrics"
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret  # ← ADD THIS
       containers:
         - name: backend
-          image: humor-game-backend:latest
-          imagePullPolicy: Never
+          image: shivamsoni1995/humor-game-backend:v1.0.0  # ← CHANGE THIS
+          imagePullPolicy: IfNotPresent  # ← CHANGE FROM Never TO IfNotPresent
           ports:
             - containerPort: 3001
           env:
@@ -111,4 +113,3 @@ spec:
     app: backend
   ports:
     - port: 3001
-

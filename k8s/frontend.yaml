@@ -17,10 +17,12 @@ spec:
         prometheus.io/port: "80"
         prometheus.io/path: "/metrics"
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret  # ← ADD THIS
       containers:
         - name: frontend
-          image: humor-game-frontend:latest
-          imagePullPolicy: Always
+          image: shivamsoni1995/humor-game-frontend:v1.0.0  # ← CHANGE THIS
+          imagePullPolicy: IfNotPresent  # ← CHANGE FROM Never TO IfNotPresent
           ports:
             - containerPort: 80
           env:
@@ -52,4 +54,3 @@ spec:
     app: frontend
   ports:
     - port: 80
-
