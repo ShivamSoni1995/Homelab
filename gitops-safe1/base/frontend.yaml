@@ -19,8 +19,8 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: humor-game-frontend:latest
-          imagePullPolicy: Never
+          image: shivamsoni1995/humor-game-frontend:v1.0.2
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
           env:
