@@ -21,7 +21,7 @@ spec:
         - name: dockerhub-secret  # ← ADD THIS
       containers:
         - name: frontend
-          image: shivamsoni1995/humor-game-frontend:v1.0.0  # ← CHANGE THIS
+          image: shivamsoni1995/humor-game-frontend:v1.0.1  # ← CHANGE THIS
           imagePullPolicy: IfNotPresent  # ← CHANGE FROM Never TO IfNotPresent
           ports:
             - containerPort: 80
