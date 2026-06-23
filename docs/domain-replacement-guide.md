@@ -1,3 +1,4 @@
+
 # Domain Replacement Guide
 
 *Complete list of all files where you need to replace `gameapp.games` with your own domain*
