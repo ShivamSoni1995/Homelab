@@ -8,7 +8,7 @@
     "dev": "nodemon server.js",
     "test": "echo '✅ Tests skipped - DevOps learning focus' && exit 0",
     "test:watch": "jest --watch",
-    "test:ci": "jest --coverage --ci --reporters=default --reporters=jest-junit",
+    "test:ci": "jest --coverage --ci --reporters=default",
     "db:migrate": "node utils/migrate.js",
     "db:seed": "node utils/seed.js",
     "lint": "echo '✅ Linting skipped - DevOps learning focus' && exit 0",
