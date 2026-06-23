@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: shivamsoni1995/humor-game-frontend:v1.0.3
+          image: shivamsoni1995/humor-game-frontend:348ef8b
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -52,5 +52,9 @@ spec:
     app: frontend
   ports:
     - port: 80
+  template:
+    spec:
+      containers:
+        - image: shivamsoni1995/humor-game-frontend:348ef8b
+          imagePullPolicy: Always
 # test
-
