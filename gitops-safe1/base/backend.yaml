@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: shivamsoni1995/humor-game-backend:348ef8b
+          image: shivamsoni1995/humor-game-backend:5010ff1
           imagePullPolicy: Always
           ports:
             - containerPort: 3001
@@ -114,5 +114,5 @@ spec:
   template:
     spec:
       containers:
-        - image: shivamsoni1995/humor-game-backend:348ef8b
+        - image: shivamsoni1995/humor-game-backend:5010ff1
           imagePullPolicy: Always
